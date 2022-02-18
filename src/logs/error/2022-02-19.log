@@ -1,0 +1,101 @@
+2022-02-19 00:23:53 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:28:34 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:29:07 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:29:20 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:30:08 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:30:24 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:31:50 error: [POST] /signup >> StatusCode:: 500, Mesage:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:57:08 error: [POST] /login >> StatusCode:: 409, Message:: You're password not matching
+2022-02-19 00:57:18 error: [POST] /login >> StatusCode:: 400, Message:: email must be an email
+2022-02-19 00:57:28 error: [POST] /login >> StatusCode:: 409, Message:: You're email test@test.rue not found
+2022-02-19 00:59:18 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 00:59:27 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:00:33 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:03:57 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:04:03 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:10:14 error: uncaughtException: Missing initializer in const declaration
+D:\back_project\src\services\users.service.ts:8
+const notFounUser;
+      ^^^^^^^^^^^
+
+SyntaxError: Missing initializer in const declaration
+    at wrapSafe (internal/modules/cjs/loader.js:1001:16)
+    at Module._compile (internal/modules/cjs/loader.js:1049:27)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\back_project\src\controllers\users.controller.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+2022-02-19 01:16:25 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m8[0m:[93m39[0m - [91merror[0m[90m TS1005: [0m'(' expected.
+
+[7m8[0m function checkingCompletenessUserData async (userData: any) {
+[7m [0m [91m                                      ~~~~~[0m
+[96msrc/services/users.service.ts[0m:[93m8[0m:[93m61[0m - [91merror[0m[90m TS1005: [0m'=>' expected.
+
+[7m8[0m function checkingCompletenessUserData async (userData: any) {
+[7m [0m [91m                                                            ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/services/users.service.ts[0m:[93m8[0m:[93m39[0m - [91merror[0m[90m TS1005: [0m'(' expected.
+
+[7m8[0m function checkingCompletenessUserData async (userData: any) {
+[7m [0m [91m                                      ~~~~~[0m
+[96msrc/services/users.service.ts[0m:[93m8[0m:[93m61[0m - [91merror[0m[90m TS1005: [0m'=>' expected.
+
+[7m8[0m function checkingCompletenessUserData async (userData: any) {
+[7m [0m [91m                                                            ~[0m
+
+    at createTSError (D:\back_project\node_modules\ts-node\src\index.ts:828:12)
+    at reportTSError (D:\back_project\node_modules\ts-node\src\index.ts:832:19)
+    at D:\back_project\node_modules\ts-node\src\index.ts:1299:34
+    at Object.compile (D:\back_project\node_modules\ts-node\src\index.ts:1326:43)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1458:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\back_project\src\controllers\users.controller.ts:4:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+2022-02-19 01:23:51 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:24:32 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:25:24 error: [POST] /login >> StatusCode:: 409, Message:: You're email test2@test.ru not found
+2022-02-19 01:26:42 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:25 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:29 error: [POST] /signup >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:34 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:41 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:55 error: [POST] /signup >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:28:46 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:28:55 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:29:00 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:29:14 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:29:45 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:29:46 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:30:01 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:30:11 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:30:27 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:32:41 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:32:54 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:33:08 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:38:09 error: [POST] /users >> StatusCode:: 400, Message:: property id should not exist, password must be a string
+2022-02-19 01:38:22 error: [POST] /users >> StatusCode:: 400, Message:: Unexpected token  in JSON at position 40
+2022-02-19 01:38:36 error: [POST] /users >> StatusCode:: 400, Message:: password must be a string
+2022-02-19 01:39:16 error: [POST] /users >> StatusCode:: 409, Message:: You're email test10@test.ru already exists
+2022-02-19 01:41:02 error: [POST] /users >> StatusCode:: 400, Message:: property id should not exist, email must be an email, password must be a string
+2022-02-19 01:51:47 error: [DELETE] /users >> StatusCode:: 400, Message:: Unexpected token } in JSON at position 87
+2022-02-19 01:57:15 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists

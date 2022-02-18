@@ -1,0 +1,164 @@
+2022-02-19 00:16:37 info: =================================
+2022-02-19 00:16:37 info: ======= ENV: development =======
+2022-02-19 00:16:37 info: 🚀 App listening on the port 3009
+2022-02-19 00:16:37 info: =================================
+2022-02-19 00:17:44 info: [0mGET / [36m304[0m 5.062 ms - -[0m
+2022-02-19 00:17:44 info: [0mGET /favicon.ico [33m404[0m 1.699 ms - 150[0m
+2022-02-19 00:18:19 info: [0mGET /signup [33m404[0m 0.831 ms - 145[0m
+2022-02-19 00:23:53 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:23:53 info: [0mPOST /signup [31m500[0m 14.345 ms - 70[0m
+2022-02-19 00:28:34 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:28:34 info: [0mPOST /signup [31m500[0m 1.333 ms - 70[0m
+2022-02-19 00:29:07 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:29:07 info: [0mPOST /signup?email=12345&password=12345 [31m500[0m 1.176 ms - 70[0m
+2022-02-19 00:29:20 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:29:20 info: [0mPOST /signup?email=test@test.ru&password=12345 [31m500[0m 1.159 ms - 70[0m
+2022-02-19 00:30:08 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:30:08 info: [0mPOST /signup?email=test@test.ru&password=12345 [31m500[0m 1.352 ms - 70[0m
+2022-02-19 00:30:24 error: [POST] /signup >> StatusCode:: 500, Message:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:30:24 info: [0mPOST /signup?email=test@test.ru&password=12345 [31m500[0m 1.476 ms - 70[0m
+2022-02-19 00:31:48 info: =================================
+2022-02-19 00:31:48 info: ======= ENV: development =======
+2022-02-19 00:31:48 info: 🚀 App listening on the port 3009
+2022-02-19 00:31:48 info: =================================
+2022-02-19 00:31:50 error: [POST] /signup >> StatusCode:: 500, Mesage:: (0 , class_transformer_1.plainToClass) is not a function
+2022-02-19 00:31:50 info: [0mPOST /signup?email=test@test.ru&password=12345 [31m500[0m 12.872 ms - 70[0m
+2022-02-19 00:31:55 info: =================================
+2022-02-19 00:31:55 info: ======= ENV: development =======
+2022-02-19 00:31:55 info: 🚀 App listening on the port 3009
+2022-02-19 00:31:55 info: =================================
+2022-02-19 00:51:01 info: =================================
+2022-02-19 00:51:01 info: ======= ENV: development =======
+2022-02-19 00:51:01 info: 🚀 App listening on the port 3009
+2022-02-19 00:51:01 info: =================================
+2022-02-19 00:51:05 info: [0mPOST /signup?email=test@test.ru&password=12345 [32m201[0m 189.088 ms - 167[0m
+2022-02-19 00:56:23 info: [0mPOST /login [32m200[0m 122.634 ms - 166[0m
+2022-02-19 00:56:55 info: [0mPOST /login [32m200[0m 111.607 ms - 166[0m
+2022-02-19 00:57:08 error: [POST] /login >> StatusCode:: 409, Message:: You're password not matching
+2022-02-19 00:57:08 info: [0mPOST /login [33m409[0m 114.114 ms - 42[0m
+2022-02-19 00:57:18 error: [POST] /login >> StatusCode:: 400, Message:: email must be an email
+2022-02-19 00:57:18 info: [0mPOST /login [33m400[0m 2.083 ms - 36[0m
+2022-02-19 00:57:28 error: [POST] /login >> StatusCode:: 409, Message:: You're email test@test.rue not found
+2022-02-19 00:57:28 info: [0mPOST /login [33m409[0m 48.696 ms - 50[0m
+2022-02-19 00:57:38 info: [0mPOST /login [32m200[0m 119.953 ms - 166[0m
+2022-02-19 00:59:04 info: [0mPOST /logout [32m200[0m 109.401 ms - 167[0m
+2022-02-19 00:59:18 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 00:59:18 info: [0mPOST /logout [33m404[0m 1.604 ms - 42[0m
+2022-02-19 00:59:27 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 00:59:27 info: [0mPOST /logout [33m404[0m 1.198 ms - 42[0m
+2022-02-19 00:59:35 info: [0mPOST /login [32m200[0m 111.430 ms - 166[0m
+2022-02-19 01:00:16 info: [0mPOST /logout [32m200[0m 91.620 ms - 167[0m
+2022-02-19 01:00:33 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:00:33 info: [0mPOST /logout [33m404[0m 0.893 ms - 42[0m
+2022-02-19 01:03:57 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:03:57 info: [0mPOST /logout [33m404[0m 0.824 ms - 42[0m
+2022-02-19 01:04:03 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:04:03 info: [0mPOST /logout [33m404[0m 1.340 ms - 42[0m
+2022-02-19 01:04:13 info: [0mPOST /login [32m200[0m 110.947 ms - 166[0m
+2022-02-19 01:16:44 info: =================================
+2022-02-19 01:16:44 info: ======= ENV: development =======
+2022-02-19 01:16:44 info: 🚀 App listening on the port 3009
+2022-02-19 01:16:44 info: =================================
+2022-02-19 01:17:26 info: =================================
+2022-02-19 01:17:26 info: ======= ENV: development =======
+2022-02-19 01:17:26 info: 🚀 App listening on the port 3009
+2022-02-19 01:17:26 info: =================================
+2022-02-19 01:19:35 info: =================================
+2022-02-19 01:19:35 info: ======= ENV: development =======
+2022-02-19 01:19:35 info: 🚀 App listening on the port 3009
+2022-02-19 01:19:35 info: =================================
+2022-02-19 01:21:20 info: [0mPOST /login [32m200[0m 147.494 ms - 166[0m
+2022-02-19 01:23:12 info: [0mGET /users?id=621014c9fc225646bc210d95 [32m200[0m 47.581 ms - 170[0m
+2022-02-19 01:23:51 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:23:51 info: [0mPOST /users?id=621014c9fc225646bc210d95 [33m409[0m 44.089 ms - 54[0m
+2022-02-19 01:24:32 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:24:32 info: [0mPOST /users [33m409[0m 312.026 ms - 54[0m
+2022-02-19 01:25:24 error: [POST] /login >> StatusCode:: 409, Message:: You're email test2@test.ru not found
+2022-02-19 01:25:24 info: [0mPOST /login [33m409[0m 41.502 ms - 50[0m
+2022-02-19 01:26:15 info: [0mPOST /signup [32m201[0m 252.604 ms - 168[0m
+2022-02-19 01:26:22 info: [0mPOST /signup [32m201[0m 246.732 ms - 168[0m
+2022-02-19 01:26:33 info: [0mPOST /signup [32m201[0m 217.208 ms - 168[0m
+2022-02-19 01:26:42 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:26:42 info: [0mPOST /users [33m409[0m 61.538 ms - 54[0m
+2022-02-19 01:27:25 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:25 info: [0mPOST /users [33m409[0m 42.329 ms - 54[0m
+2022-02-19 01:27:29 error: [POST] /signup >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:29 info: [0mPOST /signup [33m409[0m 57.435 ms - 54[0m
+2022-02-19 01:27:34 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:34 info: [0mPOST /users [33m409[0m 43.602 ms - 54[0m
+2022-02-19 01:27:41 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:41 info: [0mPOST /users [33m409[0m 48.312 ms - 54[0m
+2022-02-19 01:27:55 error: [POST] /signup >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:27:55 info: [0mPOST /signup [33m409[0m 44.680 ms - 54[0m
+2022-02-19 01:28:41 info: [0mPOST /logout [32m200[0m 101.811 ms - 167[0m
+2022-02-19 01:28:46 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:28:46 info: [0mPOST /users [33m409[0m 44.402 ms - 54[0m
+2022-02-19 01:28:55 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:28:55 info: [0mPOST /logout [33m404[0m 0.963 ms - 42[0m
+2022-02-19 01:29:00 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:29:00 info: [0mPOST /users [33m409[0m 61.541 ms - 54[0m
+2022-02-19 01:29:14 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:29:14 info: [0mPOST /users [33m409[0m 115.830 ms - 54[0m
+2022-02-19 01:29:45 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:29:45 info: [0mPOST /logout [33m404[0m 1.000 ms - 42[0m
+2022-02-19 01:29:46 error: [POST] /logout >> StatusCode:: 404, Message:: Authentication token missing
+2022-02-19 01:29:46 info: [0mPOST /logout [33m404[0m 1.376 ms - 42[0m
+2022-02-19 01:30:01 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:30:01 info: [0mPOST /users [33m400[0m 2.657 ms - 63[0m
+2022-02-19 01:30:11 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:30:11 info: [0mPOST /users [33m400[0m 0.993 ms - 63[0m
+2022-02-19 01:30:27 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:30:27 info: [0mPOST /users [33m409[0m 43.348 ms - 54[0m
+2022-02-19 01:32:41 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:32:41 info: [0mPOST /users [33m400[0m 0.913 ms - 63[0m
+2022-02-19 01:32:50 info: [0mPOST /login [32m200[0m 112.284 ms - 166[0m
+2022-02-19 01:32:54 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:32:54 info: [0mPOST /users [33m400[0m 0.976 ms - 63[0m
+2022-02-19 01:33:08 error: [POST] /users >> StatusCode:: 400, Message:: email must be an email, password must be a string
+2022-02-19 01:33:08 info: [0mPOST /users [33m400[0m 1.173 ms - 63[0m
+2022-02-19 01:33:26 info: [0mGET /users [32m200[0m 41.411 ms - 593[0m
+2022-02-19 01:34:44 info: [0mGET /users [32m200[0m 41.294 ms - 593[0m
+2022-02-19 01:38:09 error: [POST] /users >> StatusCode:: 400, Message:: property id should not exist, password must be a string
+2022-02-19 01:38:09 info: [0mPOST /users [33m400[0m 1.432 ms - 69[0m
+2022-02-19 01:38:22 error: [POST] /users >> StatusCode:: 400, Message:: Unexpected token  in JSON at position 40
+2022-02-19 01:38:22 info: [0mPOST /users [33m400[0m 4.084 ms - 56[0m
+2022-02-19 01:38:36 error: [POST] /users >> StatusCode:: 400, Message:: password must be a string
+2022-02-19 01:38:36 info: [0mPOST /users [33m400[0m 1.700 ms - 39[0m
+2022-02-19 01:39:00 info: [0mPOST /users [32m201[0m 175.600 ms - 170[0m
+2022-02-19 01:39:16 error: [POST] /users >> StatusCode:: 409, Message:: You're email test10@test.ru already exists
+2022-02-19 01:39:16 info: [0mPOST /users [33m409[0m 41.285 ms - 56[0m
+2022-02-19 01:39:32 info: [0mPOST /users [32m201[0m 211.109 ms - 169[0m
+2022-02-19 01:41:02 error: [POST] /users >> StatusCode:: 400, Message:: property id should not exist, email must be an email, password must be a string
+2022-02-19 01:41:02 info: [0mPOST /users [33m400[0m 1.187 ms - 93[0m
+2022-02-19 01:41:17 info: [0mDELETE /users [33m404[0m 2.678 ms - 147[0m
+2022-02-19 01:41:56 info: [0mDELETE /users?id=62102024dce90a37cc6fb430 [33m404[0m 0.661 ms - 147[0m
+2022-02-19 01:42:06 info: [0mPOST /login [32m200[0m 129.772 ms - 166[0m
+2022-02-19 01:42:30 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.391 ms - 147[0m
+2022-02-19 01:43:20 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.709 ms - 147[0m
+2022-02-19 01:44:49 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.356 ms - 147[0m
+2022-02-19 01:45:47 info: [0mPOST /login [32m200[0m 116.732 ms - 166[0m
+2022-02-19 01:46:02 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.652 ms - 147[0m
+2022-02-19 01:46:14 info: [0mDELETE /users?id=62101d07dce90a37cc6fb414 [33m404[0m 0.566 ms - 147[0m
+2022-02-19 01:46:28 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.860 ms - 147[0m
+2022-02-19 01:46:52 info: [0mPOST /login [32m200[0m 127.021 ms - 166[0m
+2022-02-19 01:48:22 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.358 ms - 147[0m
+2022-02-19 01:48:37 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.353 ms - 147[0m
+2022-02-19 01:49:32 info: [0mDELETE /users?id=62101d07dce90a37cc6fb414 [33m404[0m 0.370 ms - 147[0m
+2022-02-19 01:50:20 info: [0mDELETE /users?id=62101d07dce90a37cc6fb414 [33m404[0m 0.421 ms - 147[0m
+2022-02-19 01:50:48 info: [0mPOST /login [32m200[0m 119.481 ms - 166[0m
+2022-02-19 01:51:29 info: [0mDELETE /users [33m404[0m 0.402 ms - 147[0m
+2022-02-19 01:51:47 error: [DELETE] /users >> StatusCode:: 400, Message:: Unexpected token } in JSON at position 87
+2022-02-19 01:51:47 info: [0mDELETE /users [33m400[0m 1.151 ms - 55[0m
+2022-02-19 01:51:59 info: [0mDELETE /users [33m404[0m 0.401 ms - 147[0m
+2022-02-19 01:52:28 info: [0mDELETE /users [33m404[0m 0.981 ms - 147[0m
+2022-02-19 01:52:36 info: [0mDELETE /users [33m404[0m 0.421 ms - 147[0m
+2022-02-19 01:52:53 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.381 ms - 147[0m
+2022-02-19 01:53:31 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.320 ms - 147[0m
+2022-02-19 01:53:56 info: [0mDELETE /users?id=621014c9fc225646bc210d95 [33m404[0m 0.333 ms - 147[0m
+2022-02-19 01:57:15 error: [POST] /users >> StatusCode:: 409, Message:: You're email test@test.ru already exists
+2022-02-19 01:57:15 info: [0mPOST /users [33m409[0m 40.748 ms - 54[0m
+2022-02-19 01:57:24 info: [0mPOST /users [32m201[0m 166.140 ms - 170[0m
+2022-02-19 01:58:55 info: =================================
+2022-02-19 01:58:55 info: ======= ENV: development =======
+2022-02-19 01:58:55 info: 🚀 App listening on the port 3009
+2022-02-19 01:58:55 info: =================================
