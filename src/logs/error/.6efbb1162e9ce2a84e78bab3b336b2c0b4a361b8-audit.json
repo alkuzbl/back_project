@@ -1,0 +1,15 @@
+{
+    "keep": {
+        "days": false,
+        "amount": 30
+    },
+    "auditLog": "D:\\back_project\\src\\logs\\error\\.6efbb1162e9ce2a84e78bab3b336b2c0b4a361b8-audit.json",
+    "files": [
+        {
+            "date": 1645199533274,
+            "name": "D:\\back_project\\src\\logs\\error\\2022-02-18.log",
+            "hash": "f26bc8b03e5c38eb52e34cfa9ff06fc2"
+        }
+    ],
+    "hashType": "md5"
+}
