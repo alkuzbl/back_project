@@ -11,6 +11,12 @@ const userSchema: Schema = new Schema({
     type: String,
     required: true,
   },
+  name: {
+    type: String,
+  },
+  avatar: {
+    type: String,
+  },
 });
 
 const userModel = model<User & Document>('User', userSchema);

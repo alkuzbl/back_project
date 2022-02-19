@@ -1,10 +1,10 @@
 import { NextFunction, Request, Response } from 'express';
 import { CreateUserDto } from '@dtos/users.dto';
 import { User } from '@interfaces/users.interface';
-import userService from '@services/users.service';
+import UserService from '@services/users.service';
 
 class UsersController {
-  public userService = new userService();
+  public userService = new UserService();
 
   public getUsers = async (req: Request, res: Response, next: NextFunction) => {
     try {
@@ -53,6 +53,7 @@ class UsersController {
   public deleteUser = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const userId: string = req.params.id;
+      console.log(userId);
       const deleteUserData: User = await this.userService.deleteUser(userId);
 
       res.status(200).json({ data: deleteUserData, message: 'deleted' });
