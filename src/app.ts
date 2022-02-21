@@ -13,17 +13,25 @@ import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
+import http from 'http';
+import { Server } from 'socket.io';
 
 class App {
+  // типизация
   public app: express.Application;
   public env: string;
   public port: string | number;
+  public server: any;
+  public io: any;
 
   constructor(routes: Routes[]) {
     this.app = express();
     this.env = NODE_ENV || 'development';
     this.port = PORT || 3000;
+    this.server = http.createServer(this.app);
+    this.io = new Server(this.server, { path: '/messages' });
 
+    this.connectSocket();
     this.connectToDatabase();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
@@ -32,7 +40,7 @@ class App {
   }
 
   public listen() {
-    this.app.listen(this.port, () => {
+    this.server.listen(this.port, () => {
       logger.info(`=================================`);
       logger.info(`======= ENV: ${this.env} =======`);
       logger.info(`🚀 App listening on the port ${this.port}`);
@@ -41,7 +49,7 @@ class App {
   }
 
   public getServer() {
-    return this.app;
+    return this.server;
   }
 
   private connectToDatabase() {
@@ -50,6 +58,12 @@ class App {
     }
 
     connect(dbConnection.url, dbConnection.options);
+  }
+
+  private connectSocket() {
+    this.io.on('connection', socket => {
+      console.log('a user connected');
+    });
   }
 
   private initializeMiddlewares() {
