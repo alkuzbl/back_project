@@ -15,28 +15,29 @@ import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
 import http from 'http';
 import { Server } from 'socket.io';
+import { ClientToServerEvents, InterServerEvents, ServerToClientEvents, SocketData } from '@interfaces/socket-io.interface';
 
 class App {
   // типизация
   public app: express.Application;
   public env: string;
   public port: string | number;
-  public server: any;
-  public io: any;
+  public server: http.Server;
+  private io: Server<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>;
 
   constructor(routes: Routes[]) {
     this.app = express();
     this.env = NODE_ENV || 'development';
     this.port = PORT || 3000;
     this.server = http.createServer(this.app);
-    this.io = new Server(this.server, { path: '/messages' });
+    this.io = new Server(this.server);
 
-    this.connectSocket();
     this.connectToDatabase();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
+    this.connectSocket();
   }
 
   public listen() {
@@ -60,7 +61,7 @@ class App {
     connect(dbConnection.url, dbConnection.options);
   }
 
-  private connectSocket() {
+  public connectSocket() {
     this.io.on('connection', socket => {
       console.log('a user connected');
     });
