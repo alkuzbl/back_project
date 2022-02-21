@@ -5,7 +5,6 @@ class IndexController {
         this.index = (req, res, next) => {
             try {
                 res.sendStatus(200);
-                //res.sendFile('/back_project/src/index.html');
             }
             catch (error) {
                 next(error);
