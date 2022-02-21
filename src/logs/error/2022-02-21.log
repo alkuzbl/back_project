@@ -1,0 +1,637 @@
+2022-02-21 10:48:06 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at Function.listen (D:\back_project\node_modules\express\lib\application.js:618:24)
+    at App.listen (D:\back_project\src\app.ts:35:14)
+    at Object.<anonymous> (D:\back_project\src\server.ts:11:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+2022-02-21 11:18:40 error: uncaughtException: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+Error: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+    at Server.attach (D:\back_project\node_modules\socket.io\dist\index.js:163:19)
+    at new Server (D:\back_project\node_modules\socket.io\dist\index.js:71:18)
+    at new App (D:\back_project\src\app.ts:28:15)
+    at Object.<anonymous> (D:\back_project\src\server.ts:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+2022-02-21 11:19:03 error: uncaughtException: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+Error: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+    at Server.attach (D:\back_project\node_modules\socket.io\dist\index.js:163:19)
+    at new Server (D:\back_project\node_modules\socket.io\dist\index.js:71:18)
+    at new App (D:\back_project\src\app.ts:29:15)
+    at Object.<anonymous> (D:\back_project\src\server.ts:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+2022-02-21 11:20:28 error: uncaughtException: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+Error: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+    at Server.attach (D:\back_project\node_modules\socket.io\dist\index.js:163:19)
+    at new Server (D:\back_project\node_modules\socket.io\dist\index.js:71:18)
+    at new App (D:\back_project\src\app.ts:30:15)
+    at Object.<anonymous> (D:\back_project\src\server.ts:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+2022-02-21 11:20:42 error: uncaughtException: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+Error: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+    at Server.attach (D:\back_project\node_modules\socket.io\dist\index.js:163:19)
+    at new Server (D:\back_project\node_modules\socket.io\dist\index.js:71:18)
+    at new App (D:\back_project\src\app.ts:31:15)
+    at Object.<anonymous> (D:\back_project\src\server.ts:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+2022-02-21 11:21:56 error: uncaughtException: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+Error: You are trying to attach socket.io to an express request handler function. Please pass a http.Server instance.
+    at Server.attach (D:\back_project\node_modules\socket.io\dist\index.js:163:19)
+    at new Server (D:\back_project\node_modules\socket.io\dist\index.js:71:18)
+    at new App (D:\back_project\src\app.ts:29:15)
+    at Object.<anonymous> (D:\back_project\src\server.ts:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+2022-02-21 11:44:10 error: uncaughtException: express is not a function
+TypeError: express is not a function
+    at new App (D:\back_project\src\app.ts:27:16)
+    at Object.<anonymous> (D:\back_project\src\server.ts:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+2022-02-21 12:13:48 error: [POST] /login >> StatusCode:: 400, Message:: avatar must be a string, name must be a string
+2022-02-21 12:14:35 error: [POST] /signup >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-02-21 12:15:55 error: [POST] /signup >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-02-21 12:16:35 error: [POST] /signup >> StatusCode:: 500, Message:: Operation `users.findOne()` buffering timed out after 10000ms
+2022-02-21 12:18:37 error: [POST] /login >> StatusCode:: 400, Message:: avatar must be a string, name must be a string
+2022-02-21 12:23:59 error: [POST] /login >> StatusCode:: 409, Message:: You're email test44@test.ru not found
+2022-02-21 12:43:22 error: uncaughtException: server is not defined
+ReferenceError: server is not defined
+    at new App (D:\back_project\src\app.ts:31:26)
+    at Object.<anonymous> (D:\back_project\src\server.ts:9:13)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+2022-02-21 13:59:47 error: [DELETE] /messages/hlklk >> StatusCode:: 500, Message:: Cast to ObjectId failed for value "hlklk" (type string) at path "_id" for model "Message"
+2022-02-21 14:03:45 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+    at createTSError (D:\back_project\node_modules\ts-node\src\index.ts:828:12)
+    at reportTSError (D:\back_project\node_modules\ts-node\src\index.ts:832:19)
+    at D:\back_project\node_modules\ts-node\src\index.ts:1299:34
+    at Object.compile (D:\back_project\node_modules\ts-node\src\index.ts:1326:43)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1458:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\back_project\src\server.ts:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+2022-02-21 14:05:14 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+    at createTSError (D:\back_project\node_modules\ts-node\src\index.ts:828:12)
+    at reportTSError (D:\back_project\node_modules\ts-node\src\index.ts:832:19)
+    at D:\back_project\node_modules\ts-node\src\index.ts:1299:34
+    at Object.compile (D:\back_project\node_modules\ts-node\src\index.ts:1326:43)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1458:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\back_project\src\server.ts:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+2022-02-21 14:09:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+    at createTSError (D:\back_project\node_modules\ts-node\src\index.ts:828:12)
+    at reportTSError (D:\back_project\node_modules\ts-node\src\index.ts:832:19)
+    at D:\back_project\node_modules\ts-node\src\index.ts:1299:34
+    at Object.compile (D:\back_project\node_modules\ts-node\src\index.ts:1326:43)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1458:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\back_project\src\server.ts:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+2022-02-21 14:12:52 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+    at createTSError (D:\back_project\node_modules\ts-node\src\index.ts:828:12)
+    at reportTSError (D:\back_project\node_modules\ts-node\src\index.ts:832:19)
+    at D:\back_project\node_modules\ts-node\src\index.ts:1299:34
+    at Object.compile (D:\back_project\node_modules\ts-node\src\index.ts:1326:43)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1458:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\back_project\src\server.ts:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+2022-02-21 14:13:11 error: uncaughtException: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+TSError: ⨯ Unable to compile TypeScript:
+[96msrc/routes/messages.route.ts[0m:[93m16[0m:[93m62[0m - [91merror[0m[90m TS1003: [0mIdentifier expected.
+
+[7m16[0m     this.router.post(`${this.path}`, this.messagesController.);
+[7m  [0m [91m                                                             ~[0m
+
+    at createTSError (D:\back_project\node_modules\ts-node\src\index.ts:828:12)
+    at reportTSError (D:\back_project\node_modules\ts-node\src\index.ts:832:19)
+    at D:\back_project\node_modules\ts-node\src\index.ts:1299:34
+    at Object.compile (D:\back_project\node_modules\ts-node\src\index.ts:1326:43)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1458:30)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Module.require (internal/modules/cjs/loader.js:974:19)
+    at require (internal/modules/cjs/helpers.js:92:18)
+    at Object.<anonymous> (D:\back_project\src\server.ts:6:1)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+2022-02-21 14:16:14 error: [POST] /messages >> StatusCode:: 400, Message:: You're not messageData
+2022-02-21 15:29:35 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\src\controllers\index.html'
+2022-02-21 15:30:08 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\index.html'
+2022-02-21 15:30:25 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\src\controllers\index.html'
+2022-02-21 15:31:48 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\index.html'
+2022-02-21 15:32:31 error: [GET] / >> StatusCode:: 500, Message:: path must be absolute or specify root to res.sendFile
+2022-02-21 15:33:13 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\src\controllers\index.controller.ts\index.html'
+2022-02-21 16:12:10 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\src\controllers\index.html'
+2022-02-21 16:12:12 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\src\controllers\index.html'
+2022-02-21 16:13:12 error: [GET] / >> StatusCode:: 500, Message:: path must be absolute or specify root to res.sendFile
+2022-02-21 16:13:16 error: [GET] / >> StatusCode:: 500, Message:: path must be absolute or specify root to res.sendFile
+2022-02-21 16:15:11 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\index.html'
+2022-02-21 16:32:18 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:21:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:33:04 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:21:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:33:18 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:20:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:34:05 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:20:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:34:33 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:20:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:35:01 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:35:35 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:37:01 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:37:44 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:38:20 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\index.html'
+2022-02-21 16:38:55 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:47:30 error: [GET] / >> StatusCode:: 500, Message:: path must be absolute or specify root to res.sendFile
+2022-02-21 16:47:34 error: [GET] / >> StatusCode:: 500, Message:: path must be absolute or specify root to res.sendFile
+2022-02-21 16:47:55 error: [GET] / >> StatusCode:: 500, Message:: path must be absolute or specify root to res.sendFile
+2022-02-21 16:48:26 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\src\controllersback_project\index.html'
+2022-02-21 16:49:05 error: [GET] / >> StatusCode:: 403, Message:: Forbidden
+2022-02-21 16:49:09 error: [GET] / >> StatusCode:: 403, Message:: Forbidden
+2022-02-21 16:49:18 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\back_project\src\controllers..\back_project\index.html'
+2022-02-21 16:49:49 error: [GET] / >> StatusCode:: 403, Message:: Forbidden
+2022-02-21 16:50:09 error: [GET] / >> StatusCode:: 404, Message:: ENOENT: no such file or directory, stat 'D:\index.html'
+2022-02-21 16:54:42 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:55:04 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:55:20 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:56:15 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:57:02 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 16:57:40 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 17:00:45 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+2022-02-21 17:02:00 error: uncaughtException: listen EADDRINUSE: address already in use :::3009
+Error: listen EADDRINUSE: address already in use :::3009
+    at Server.setupListenHandle [as _listen2] (net.js:1320:16)
+    at listenInCluster (net.js:1368:12)
+    at Server.listen (net.js:1454:7)
+    at App.listen (D:\back_project\src\app.ts:43:17)
+    at Object.<anonymous> (D:\back_project\src\server.ts:12:5)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Module.m._compile (D:\back_project\node_modules\ts-node\src\index.ts:1459:23)
+    at Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
+    at Object.require.extensions.<computed> [as .ts] (D:\back_project\node_modules\ts-node\src\index.ts:1462:12)
+    at Module.load (internal/modules/cjs/loader.js:950:32)
+    at Function.Module._load (internal/modules/cjs/loader.js:790:14)
+    at Function.executeUserEntryPoint [as runMain] (internal/modules/run_main.js:76:12)
+    at main (D:\back_project\node_modules\ts-node\src\bin.ts:389:12)
+    at Object.<anonymous> (D:\back_project\node_modules\ts-node\src\bin.ts:539:3)
+    at Module._compile (internal/modules/cjs/loader.js:1085:14)
+    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1114:10)
