@@ -13,7 +13,7 @@ import { dbConnection } from '@databases';
 import { Routes } from '@interfaces/routes.interface';
 import errorMiddleware from '@middlewares/error.middleware';
 import { logger, stream } from '@utils/logger';
-import https from 'https';
+import http from 'http';
 import { Server } from 'socket.io';
 import { ClientToServerEvents, InterServerEvents, ServerToClientEvents, SocketData } from '@interfaces/socket-io.interface';
 
@@ -22,14 +22,14 @@ class App {
   public app: express.Application;
   public env: string;
   public port: string | number;
-  public server: https.Server;
+  public server: http.Server;
   private io: Server<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>;
 
   constructor(routes: Routes[]) {
     this.app = express();
     this.env = NODE_ENV || 'development';
     this.port = PORT || 3000;
-    this.server = https.createServer(this.app);
+    this.server = http.createServer(this.app);
     this.io = new Server(this.server);
 
     this.connectToDatabase();
