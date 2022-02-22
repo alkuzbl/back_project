@@ -20,16 +20,22 @@ describe('Testing Users', () => {
           _id: 'qpwoeiruty',
           email: 'a@email.com',
           password: await bcrypt.hash('q1w2e3r4!', 10),
+          name: 'Sasha',
+          avatar: 'test string',
         },
         {
           _id: 'alskdjfhg',
           email: 'b@email.com',
           password: await bcrypt.hash('a1s2d3f4!', 10),
+          name: 'Sasha',
+          avatar: 'test string',
         },
         {
           _id: 'zmxncbv',
           email: 'c@email.com',
           password: await bcrypt.hash('z1x2c3v4!', 10),
+          name: 'Sasha',
+          avatar: 'test string',
         },
       ]);
 
@@ -58,35 +64,14 @@ describe('Testing Users', () => {
     });
   });
 
-  describe('[POST] /users', () => {
-    it('response Create User', async () => {
-      const userData: CreateUserDto = {
-        email: 'test@email.com',
-        password: 'q1w2e3r4',
-      };
-
-      const usersRoute = new UsersRoute();
-      const users = usersRoute.usersController.userService.users;
-
-      users.findOne = jest.fn().mockReturnValue(null);
-      users.create = jest.fn().mockReturnValue({
-        _id: '60706478aad6c9ad19a31c84',
-        email: userData.email,
-        password: await bcrypt.hash(userData.password, 10),
-      });
-
-      (mongoose as any).connect = jest.fn();
-      const app = new App([usersRoute]);
-      return request(app.getServer()).post(`${usersRoute.path}`).send(userData).expect(201);
-    });
-  });
-
   describe('[PUT] /users/:id', () => {
     it('response Update User', async () => {
       const userId = '60706478aad6c9ad19a31c84';
       const userData: CreateUserDto = {
         email: 'test@email.com',
         password: 'q1w2e3r4',
+        avatar: 'test string',
+        name: 'Sasha',
       };
 
       const usersRoute = new UsersRoute();

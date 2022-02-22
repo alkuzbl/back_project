@@ -58,10 +58,10 @@ class App {
       set('debug', true);
     }
 
-    connect(dbConnection.url, dbConnection.options);
+    connect(dbConnection.url, {});
   }
 
-  public connectSocket() {
+  private connectSocket() {
     this.io.on('connection', socket => {
       console.log('a user connected');
     });
