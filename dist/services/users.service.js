@@ -36,20 +36,20 @@ class UserService {
             throw new HttpException_1.HttpException(400, "You're not userData");
         if (userData.email) {
             const findUser = await this.users.findOne({ email: userData.email });
-            if (findUser && findUser._id != userId)
+            if (findUser && findUser._id !== userId)
                 throw new HttpException_1.HttpException(409, `You're email ${userData.email} already exists`);
         }
         if (userData.password) {
             const hashedPassword = await (0, bcrypt_1.hash)(userData.password, 10);
             userData = Object.assign(Object.assign({}, userData), { password: hashedPassword });
         }
-        const updateUserById = await this.users.findByIdAndUpdate(userId, { userData });
+        const updateUserById = await this.users.findByIdAndUpdate({ _id: userId }, userData);
         if (!updateUserById)
             throw new HttpException_1.HttpException(409, "You're not user");
         return updateUserById;
     }
     async deleteUser(userId) {
-        const deleteUserById = await this.users.findByIdAndDelete(userId);
+        const deleteUserById = await this.users.findByIdAndDelete({ _id: userId });
         if (!deleteUserById)
             throw new HttpException_1.HttpException(409, "You're not user");
         return deleteUserById;

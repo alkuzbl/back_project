@@ -3,6 +3,8 @@ import { User } from '@interfaces/users.interface';
 
 export interface DataStoredInToken {
   _id: string;
+  name: string;
+  email: string;
 }
 
 export interface TokenData {

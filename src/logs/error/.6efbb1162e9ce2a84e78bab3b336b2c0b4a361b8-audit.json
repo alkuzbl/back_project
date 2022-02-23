@@ -24,6 +24,16 @@
             "date": 1645527813236,
             "name": "D:\\back_project\\src\\logs\\error\\2022-02-22.log",
             "hash": "9de9ccbf8c1e952375fa2ba769b3a06e"
+        },
+        {
+            "date": 1645564705719,
+            "name": "D:\\back_project\\src\\logs\\error\\2022-02-23.log",
+            "hash": "b73e2b1a99d4bd79399c06399f10e8ac"
+        },
+        {
+            "date": 1645650104981,
+            "name": "D:\\back_project\\src\\logs\\error\\2022-02-24.log",
+            "hash": "003cb1fe00124318da4f8ac4af8c7179"
         }
     ],
     "hashType": "md5"

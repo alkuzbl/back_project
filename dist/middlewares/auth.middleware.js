@@ -9,8 +9,7 @@ const authMiddleware = async (req, res, next) => {
     try {
         const Authorization = req.cookies['Authorization'] || (req.header('Authorization') ? req.header('Authorization').split('Bearer ')[1] : null);
         if (Authorization) {
-            const secretKey = _config_1.SECRET_KEY;
-            const verificationResponse = (await (0, jsonwebtoken_1.verify)(Authorization, secretKey));
+            const verificationResponse = (await (0, jsonwebtoken_1.verify)(Authorization, _config_1.SECRET_KEY));
             const userId = verificationResponse._id;
             const findUser = await users_model_1.default.findById(userId);
             if (findUser) {

@@ -16,10 +16,12 @@ class MessagesController {
       next(error);
     }
   };
+
   public createMessage = async (req: Request, res: Response, next: NextFunction) => {
     try {
       const messageData: any = req.body;
       const createMessageData: any = await this.messagesService.createMessage(messageData);
+
       res.status(201).json({ data: createMessageData, message: 'message created' });
     } catch (error) {
       next(error);

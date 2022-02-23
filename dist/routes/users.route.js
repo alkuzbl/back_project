@@ -5,6 +5,7 @@ const express_1 = require("express");
 const users_controller_1 = (0, tslib_1.__importDefault)(require("../controllers/users.controller"));
 const users_dto_1 = require("../dtos/users.dto");
 const validation_middleware_1 = (0, tslib_1.__importDefault)(require("../middlewares/validation.middleware"));
+const auth_middleware_1 = (0, tslib_1.__importDefault)(require("../middlewares/auth.middleware"));
 class UsersRoute {
     constructor() {
         this.path = '/users';
@@ -13,10 +14,10 @@ class UsersRoute {
         this.initializeRoutes();
     }
     initializeRoutes() {
-        this.router.get(`${this.path}`, this.usersController.getUsers);
-        this.router.get(`${this.path}/:id`, this.usersController.getUserById);
-        this.router.put(`${this.path}/:id`, (0, validation_middleware_1.default)(users_dto_1.CreateUserDto, 'body', true), this.usersController.updateUser);
-        this.router.delete(`${this.path}/:id`, this.usersController.deleteUser);
+        this.router.get(`${this.path}`, auth_middleware_1.default, this.usersController.getUsers);
+        this.router.get(`${this.path}/:id`, auth_middleware_1.default, this.usersController.getUserById);
+        this.router.put(`${this.path}`, [auth_middleware_1.default, (0, validation_middleware_1.default)(users_dto_1.CreateUserDto, 'body', true)], this.usersController.updateUser);
+        this.router.delete(`${this.path}`, auth_middleware_1.default, this.usersController.deleteUser);
     }
 }
 exports.default = UsersRoute;

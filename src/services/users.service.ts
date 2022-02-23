@@ -39,7 +39,7 @@ class UserService {
 
     if (userData.email) {
       const findUser: User = await this.users.findOne({ email: userData.email });
-      if (findUser && findUser._id != userId) throw new HttpException(409, `You're email ${userData.email} already exists`);
+      if (findUser && findUser._id !== userId) throw new HttpException(409, `You're email ${userData.email} already exists`);
     }
 
     if (userData.password) {
@@ -47,14 +47,14 @@ class UserService {
       userData = { ...userData, password: hashedPassword };
     }
 
-    const updateUserById: User = await this.users.findByIdAndUpdate(userId, { userData });
+    const updateUserById: User = await this.users.findByIdAndUpdate({ _id: userId }, userData);
     if (!updateUserById) throw new HttpException(409, "You're not user");
 
     return updateUserById;
   }
 
   public async deleteUser(userId: string): Promise<User> {
-    const deleteUserById: User = await this.users.findByIdAndDelete(userId);
+    const deleteUserById: User = await this.users.findByIdAndDelete({ _id: userId });
     if (!deleteUserById) throw new HttpException(409, "You're not user");
 
     return deleteUserById;

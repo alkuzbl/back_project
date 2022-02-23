@@ -37,13 +37,13 @@ class AuthService {
     async logout(userData) {
         if ((0, util_1.isEmpty)(userData))
             throw new HttpException_1.HttpException(400, "You're not userData");
-        const findUser = await this.users.findOne({ email: userData.email, password: userData.password });
+        const findUser = await this.users.findOne(userData);
         if (!findUser)
-            throw new HttpException_1.HttpException(409, `You're email ${userData.email} not found`);
+            throw new HttpException_1.HttpException(401, `You are not logged in`);
         return findUser;
     }
     createToken(user) {
-        const dataStoredInToken = { _id: user._id };
+        const dataStoredInToken = { _id: user._id, name: user.name, email: user.email };
         const secretKey = _config_1.SECRET_KEY;
         const expiresIn = 60 * 60;
         return { expiresIn, token: (0, jsonwebtoken_1.sign)(dataStoredInToken, secretKey, { expiresIn }) };

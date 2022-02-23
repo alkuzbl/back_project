@@ -2,6 +2,8 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const users_service_1 = (0, tslib_1.__importDefault)(require("../services/users.service"));
+const _config_1 = require("../config");
+const jsonwebtoken_1 = require("jsonwebtoken");
 class UsersController {
     constructor() {
         this.userService = new users_service_1.default();
@@ -24,22 +26,18 @@ class UsersController {
                 next(error);
             }
         };
-        this.createUser = async (req, res, next) => {
-            try {
-                const userData = req.body;
-                const createUserData = await this.userService.createUser(userData);
-                res.status(201).json({ data: createUserData, message: 'created' });
-            }
-            catch (error) {
-                next(error);
-            }
-        };
         this.updateUser = async (req, res, next) => {
             try {
-                const userId = req.params.id;
-                const userData = req.body;
-                const updateUserData = await this.userService.updateUser(userId, userData);
-                res.status(200).json({ data: updateUserData, message: 'updated' });
+                const Authorization = req.cookies['Authorization'] || (req.header('Authorization') ? req.header('Authorization').split('Bearer ')[1] : null);
+                if (Authorization) {
+                    const verificationResponse = (await (0, jsonwebtoken_1.verify)(Authorization, _config_1.SECRET_KEY));
+                    const userData = req.body;
+                    await this.userService.updateUser(verificationResponse._id, userData);
+                    res.status(200).json({ data: {}, message: 'Your data has been successfully updated' });
+                }
+                else {
+                    res.status(401).json({ message: 'Wrong authentication token' });
+                }
             }
             catch (error) {
                 next(error);
@@ -47,10 +45,15 @@ class UsersController {
         };
         this.deleteUser = async (req, res, next) => {
             try {
-                const userId = req.params.id;
-                console.log(userId);
-                const deleteUserData = await this.userService.deleteUser(userId);
-                res.status(200).json({ data: deleteUserData, message: 'deleted' });
+                const Authorization = req.cookies['Authorization'] || (req.header('Authorization') ? req.header('Authorization').split('Bearer ')[1] : null);
+                if (Authorization) {
+                    const verificationResponse = (await (0, jsonwebtoken_1.verify)(Authorization, _config_1.SECRET_KEY));
+                    await this.userService.deleteUser(verificationResponse._id);
+                    res.status(200).json({ data: {}, message: 'We are very sorry that you are not with us :(' });
+                }
+                else {
+                    res.status(401).json({ message: 'Wrong authentication token' });
+                }
             }
             catch (error) {
                 next(error);
