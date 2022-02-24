@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const express_1 = require("express");
-const messages_controller_1 = (0, tslib_1.__importDefault)(require("../controllers/messages.controller"));
+const messages_controller_1 = (0, tslib_1.__importDefault)(require("@controllers/messages.controller"));
 class MessagesRoute {
     constructor() {
         this.path = '/messages';

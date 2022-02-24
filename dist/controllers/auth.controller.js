@@ -1,9 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const auth_service_1 = (0, tslib_1.__importDefault)(require("../services/auth.service"));
-const jsonwebtoken_1 = require("jsonwebtoken");
-const _config_1 = require("../config");
+const auth_service_1 = (0, tslib_1.__importDefault)(require("@services/auth.service"));
 class AuthController {
     constructor() {
         this.authService = new auth_service_1.default();
@@ -11,7 +9,7 @@ class AuthController {
             try {
                 const userData = req.body;
                 await this.authService.signup(userData);
-                res.status(201).json({ data: {}, message: 'You have successfully registered' });
+                res.status(201).json({ message: 'You have successfully registered' });
             }
             catch (error) {
                 next(error);
@@ -30,17 +28,19 @@ class AuthController {
         };
         this.logOut = async (req, res, next) => {
             try {
-                const Authorization = req.cookies['Authorization'] || (req.header('Authorization') ? req.header('Authorization').split('Bearer ')[1] : null);
-                if (Authorization) {
-                    const verificationResponse = (await (0, jsonwebtoken_1.verify)(Authorization, _config_1.SECRET_KEY));
-                    const userId = verificationResponse._id;
-                    await this.authService.logout({ _id: userId });
-                    res.setHeader('Set-Cookie', ['Authorization=; Max-age=0']);
-                    res.status(200).json({ data: {}, message: 'We are waiting for you again' });
-                }
-                else {
-                    res.status(401).json({ message: 'Wrong authentication token' });
-                }
+                const userId = req.user._id;
+                console.log(userId);
+                await this.authService.logout({ _id: userId });
+                res.setHeader('Set-Cookie', ['Authorization=; Max-age=0']);
+                res.status(200).json({ message: 'We are waiting for you again' });
+            }
+            catch (error) {
+                next(error);
+            }
+        };
+        this.me = async (req, res, next) => {
+            try {
+                res.status(200).json({ data: req.user, message: 'Authorized' });
             }
             catch (error) {
                 next(error);

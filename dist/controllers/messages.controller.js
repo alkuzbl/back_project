@@ -1,7 +1,7 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
-const messages_service_1 = (0, tslib_1.__importDefault)(require("../services/messages.service"));
+const messages_service_1 = (0, tslib_1.__importDefault)(require("@services/messages.service"));
 class MessagesController {
     constructor() {
         this.messagesService = new messages_service_1.default();
