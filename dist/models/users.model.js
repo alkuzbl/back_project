@@ -1,7 +1,8 @@
 "use strict";
 Object.defineProperty(exports, "__esModule", { value: true });
+exports.userSchema = void 0;
 const mongoose_1 = require("mongoose");
-const userSchema = new mongoose_1.Schema({
+exports.userSchema = new mongoose_1.Schema({
     email: {
         type: String,
         required: true,
@@ -18,7 +19,11 @@ const userSchema = new mongoose_1.Schema({
     avatar: {
         type: String,
     },
+    isActive: {
+        type: Boolean,
+        default: false,
+    },
 });
-const userModel = (0, mongoose_1.model)('User', userSchema);
+const userModel = (0, mongoose_1.model)('User', exports.userSchema);
 exports.default = userModel;
 //# sourceMappingURL=users.model.js.map

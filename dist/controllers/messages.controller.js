@@ -2,31 +2,24 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const tslib_1 = require("tslib");
 const messages_service_1 = (0, tslib_1.__importDefault)(require("@services/messages.service"));
-class MessagesController {
+class SocketController {
     constructor() {
-        this.messagesService = new messages_service_1.default();
-        this.deleteMessage = async (req, res, next) => {
+        this.messageService = new messages_service_1.default();
+        this.createMessage = async (data) => {
             try {
-                const messageId = req.params.messageId;
-                console.log(messageId);
-                const deleteMessageData = await this.messagesService.deleteMessage(messageId);
-                res.status(200).json({ data: deleteMessageData, message: 'deleted' });
+                const message = await this.messageService.createMessage(Object.assign({}, data));
+                return message;
             }
-            catch (error) {
-                next(error);
-            }
+            catch (error) { }
         };
-        this.createMessage = async (req, res, next) => {
+        this.getMessages = async () => {
             try {
-                const messageData = req.body;
-                const createMessageData = await this.messagesService.createMessage(messageData);
-                res.status(201).json({ data: createMessageData, message: 'message created' });
+                const messages = await this.messageService.getMessages();
+                return messages;
             }
-            catch (error) {
-                next(error);
-            }
+            catch (error) { }
         };
     }
 }
-exports.default = MessagesController;
+exports.default = SocketController;
 //# sourceMappingURL=messages.controller.js.map

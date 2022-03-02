@@ -1,32 +1,23 @@
-import { NextFunction, Request, Response } from 'express';
-import { Message } from '@interfaces/messages.interface';
 import MessagesService from '@services/messages.service';
 
-class MessagesController {
-  public messagesService = new MessagesService();
+class SocketController {
+  public messageService = new MessagesService();
 
-  public deleteMessage = async (req: Request, res: Response, next: NextFunction) => {
+  public createMessage = async (data: { message: string; userId: string }) => {
     try {
-      const messageId: string = req.params.messageId;
-      console.log(messageId);
-      const deleteMessageData: Message = await this.messagesService.deleteMessage(messageId);
+      const message = await this.messageService.createMessage({ ...data });
 
-      res.status(200).json({ data: deleteMessageData, message: 'deleted' });
-    } catch (error) {
-      next(error);
-    }
+      return message;
+    } catch (error) {}
   };
 
-  public createMessage = async (req: Request, res: Response, next: NextFunction) => {
+  public getMessages = async () => {
     try {
-      const messageData: any = req.body;
-      const createMessageData: any = await this.messagesService.createMessage(messageData);
+      const messages = await this.messageService.getMessages();
 
-      res.status(201).json({ data: createMessageData, message: 'message created' });
-    } catch (error) {
-      next(error);
-    }
+      return messages;
+    } catch (error) {}
   };
 }
 
-export default MessagesController;
+export default SocketController;

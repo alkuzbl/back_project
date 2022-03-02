@@ -1,10 +1,31 @@
-import { model, Schema, Document } from 'mongoose';
+import { Document, model, Schema } from 'mongoose';
 import { Message } from '@interfaces/messages.interface';
+import { userSchema } from '@models/users.model';
 
-const messageSchema: Schema = new Schema({
+export const messageSchema: Schema = new Schema({
   message: {
     type: String,
     required: true,
+  },
+  user: {
+    type: Schema.Types.ObjectId,
+    ref: 'User',
+  },
+
+  // room: {
+  //   //type: roomSchema,
+  // },
+  messageStatus: {
+    type: Boolean,
+    default: false,
+  },
+  created: {
+    type: Date,
+    default: Date.now(),
+  },
+  updated: {
+    type: Date,
+    default: Date.now(),
   },
 });
 

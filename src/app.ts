@@ -16,6 +16,7 @@ import { logger, stream } from '@utils/logger';
 import http from 'http';
 import { Server } from 'socket.io';
 import { ClientToServerEvents, InterServerEvents, ServerToClientEvents, SocketData } from '@interfaces/socket-io.interface';
+import { SocketServer } from '@socket/socket.connect';
 
 class App {
   // типизация
@@ -23,21 +24,22 @@ class App {
   public env: string;
   public port: string | number;
   public server: http.Server;
-  private io: Server<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>;
+  private readonly io: Server<ClientToServerEvents, ServerToClientEvents, InterServerEvents, SocketData>;
+  private socketConnect: SocketServer;
 
   constructor(routes: Routes[]) {
     this.app = express();
     this.env = NODE_ENV || 'development';
     this.port = PORT || 3000;
     this.server = http.createServer(this.app);
-    this.io = new Server(this.server);
+    this.io = new Server(this.server, { path: '/chat' });
 
     this.connectToDatabase();
     this.initializeMiddlewares();
     this.initializeRoutes(routes);
     this.initializeSwagger();
     this.initializeErrorHandling();
-    this.connectSocket();
+    this.initializeSocket();
   }
 
   public listen() {
@@ -61,10 +63,9 @@ class App {
     connect(dbConnection.url, {});
   }
 
-  private connectSocket() {
-    this.io.on('connection', socket => {
-      console.log('a user connected');
-    });
+  // насколько правильно дал нэйминг?
+  private initializeSocket() {
+    this.socketConnect = new SocketServer(this.io);
   }
 
   private initializeMiddlewares() {
@@ -90,7 +91,7 @@ class App {
         info: {
           title: 'REST API',
           version: '1.0.0',
-          description: 'Example docs',
+          description: 'Api for social network',
         },
       },
       apis: ['swagger.yaml'],

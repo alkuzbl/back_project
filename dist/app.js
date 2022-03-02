@@ -17,19 +17,20 @@ const error_middleware_1 = (0, tslib_1.__importDefault)(require("@middlewares/er
 const logger_1 = require("@utils/logger");
 const http_1 = (0, tslib_1.__importDefault)(require("http"));
 const socket_io_1 = require("socket.io");
+const socket_connect_1 = require("@socket/socket.connect");
 class App {
     constructor(routes) {
         this.app = (0, express_1.default)();
         this.env = _config_1.NODE_ENV || 'development';
         this.port = _config_1.PORT || 3000;
         this.server = http_1.default.createServer(this.app);
-        this.io = new socket_io_1.Server(this.server);
+        this.io = new socket_io_1.Server(this.server, { path: '/chat' });
         this.connectToDatabase();
         this.initializeMiddlewares();
         this.initializeRoutes(routes);
         this.initializeSwagger();
         this.initializeErrorHandling();
-        this.connectSocket();
+        this.initializeSocket();
     }
     listen() {
         this.server.listen(this.port, () => {
@@ -48,10 +49,9 @@ class App {
         }
         (0, mongoose_1.connect)(_databases_1.dbConnection.url, {});
     }
-    connectSocket() {
-        this.io.on('connection', socket => {
-            console.log('a user connected');
-        });
+    // насколько правильно дал нэйминг?
+    initializeSocket() {
+        this.socketConnect = new socket_connect_1.SocketServer(this.io);
     }
     initializeMiddlewares() {
         this.app.use((0, morgan_1.default)(_config_1.LOG_FORMAT, { stream: logger_1.stream }));
@@ -74,7 +74,7 @@ class App {
                 info: {
                     title: 'REST API',
                     version: '1.0.0',
-                    description: 'Example docs',
+                    description: 'Api for social network',
                 },
             },
             apis: ['swagger.yaml'],

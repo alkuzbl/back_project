@@ -1,8 +1,10 @@
-import { NextFunction, Request, Response } from 'express';
 import MessagesService from '@services/messages.service';
-declare class MessagesController {
-    messagesService: MessagesService;
-    deleteMessage: (req: Request, res: Response, next: NextFunction) => Promise<void>;
-    createMessage: (req: Request, res: Response, next: NextFunction) => Promise<void>;
+declare class SocketController {
+    messageService: MessagesService;
+    createMessage: (data: {
+        message: string;
+        userId: string;
+    }) => Promise<import("../interfaces/messages.interface").Message>;
+    getMessages: () => Promise<import("../interfaces/messages.interface").Message[]>;
 }
-export default MessagesController;
+export default SocketController;

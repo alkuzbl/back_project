@@ -11,8 +11,14 @@ class MessagesService {
     async createMessage(messageData) {
         if ((0, util_1.isEmpty)(messageData))
             throw new HttpException_1.HttpException(400, "You're not messageData");
-        const createUserData = await this.messages.create(Object.assign({}, messageData));
-        return createUserData;
+        const userData = { message: messageData.message, user: messageData.userId };
+        const createMessageData = await this.messages.create(Object.assign({}, userData));
+        return createMessageData;
+    }
+    async getMessages() {
+        const createMessageData = await this.messages.find({}).populate('user');
+        console.log(createMessageData);
+        return createMessageData;
     }
     async deleteMessage(messageId) {
         const deleteMessageById = await this.messages.findByIdAndDelete(messageId);

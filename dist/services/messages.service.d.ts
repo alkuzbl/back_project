@@ -4,7 +4,8 @@
 import { Message } from '@interfaces/messages.interface';
 declare class MessagesService {
     messages: import("mongoose").Model<Message & import("mongoose").Document<any, any, any>, {}, {}, {}>;
-    createMessage(messageData: any): Promise<any>;
+    createMessage(messageData: Message): Promise<Message>;
+    getMessages(): Promise<Message[]>;
     deleteMessage(messageId: string): Promise<Message>;
 }
 export default MessagesService;

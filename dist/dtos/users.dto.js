@@ -18,10 +18,6 @@ class CreateUserDto {
 (0, tslib_1.__decorate)([
     (0, class_validator_1.IsString)(),
     (0, tslib_1.__metadata)("design:type", String)
-], CreateUserDto.prototype, "avatar", void 0);
-(0, tslib_1.__decorate)([
-    (0, class_validator_1.IsString)(),
-    (0, tslib_1.__metadata)("design:type", String)
 ], CreateUserDto.prototype, "name", void 0);
 exports.CreateUserDto = CreateUserDto;
 //# sourceMappingURL=users.dto.js.map

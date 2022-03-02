@@ -1,5 +1,8 @@
 export interface Message {
-  _id: string;
   userId: string;
+  //room: Room;
+  //messageStatus: boolean;
+  // created: string;
+  //updated: Date;
   message: string;
 }

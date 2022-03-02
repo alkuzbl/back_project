@@ -29,7 +29,6 @@ class AuthController {
         this.logOut = async (req, res, next) => {
             try {
                 const userId = req.user._id;
-                console.log(userId);
                 await this.authService.logout({ _id: userId });
                 res.setHeader('Set-Cookie', ['Authorization=; Max-age=0']);
                 res.status(200).json({ message: 'We are waiting for you again' });

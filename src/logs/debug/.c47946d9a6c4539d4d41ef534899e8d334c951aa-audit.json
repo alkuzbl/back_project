@@ -39,6 +39,31 @@
             "date": 1645736722290,
             "name": "D:\\back_project\\src\\logs\\debug\\2022-02-25.log",
             "hash": "5c9bdac02ff4a2393e9cfba9fc286318"
+        },
+        {
+            "date": 1645897468345,
+            "name": "D:\\back_project\\src\\logs\\debug\\2022-02-26.log",
+            "hash": "966e6297c17421fb15439af9e255f237"
+        },
+        {
+            "date": 1645948223011,
+            "name": "D:\\back_project\\src\\logs\\debug\\2022-02-27.log",
+            "hash": "6997afa03184e7dd7a8376633c43aeaa"
+        },
+        {
+            "date": 1646030473914,
+            "name": "D:\\back_project\\src\\logs\\debug\\2022-02-28.log",
+            "hash": "608a7b888c4aadad2c6b49e07b7ed377"
+        },
+        {
+            "date": 1646082525257,
+            "name": "D:\\back_project\\src\\logs\\debug\\2022-03-01.log",
+            "hash": "8b8e3872208af50b6d8ff0346fb21d54"
+        },
+        {
+            "date": 1646168617333,
+            "name": "D:\\back_project\\src\\logs\\debug\\2022-03-02.log",
+            "hash": "85dfa5ebcc736e285c9caf080aed13db"
         }
     ],
     "hashType": "md5"

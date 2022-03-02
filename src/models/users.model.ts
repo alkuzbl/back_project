@@ -1,7 +1,7 @@
-import { model, Schema, Document } from 'mongoose';
+import { Document, model, Schema } from 'mongoose';
 import { User } from '@interfaces/users.interface';
 
-const userSchema: Schema = new Schema({
+export const userSchema: Schema = new Schema({
   email: {
     type: String,
     required: true,
@@ -17,6 +17,10 @@ const userSchema: Schema = new Schema({
   },
   avatar: {
     type: String,
+  },
+  isActive: {
+    type: Boolean,
+    default: false,
   },
 });
 

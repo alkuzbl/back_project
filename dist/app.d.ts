@@ -7,12 +7,13 @@ declare class App {
     env: string;
     port: string | number;
     server: http.Server;
-    private io;
+    private readonly io;
+    private socketConnect;
     constructor(routes: Routes[]);
     listen(): void;
     getServer(): http.Server;
     private connectToDatabase;
-    private connectSocket;
+    private initializeSocket;
     private initializeMiddlewares;
     private initializeRoutes;
     private initializeSwagger;
